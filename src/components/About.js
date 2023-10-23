@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import Skills from './Skills';
 import Projects from './Projects';
 import Footpage from './Footpage';
+import data from "../data/projectData"
 
 const About = () => {
   return (
@@ -24,8 +25,22 @@ const About = () => {
             <img className="profile-pic" src={"/images/picture.png"} alt="" />
           </div>
           <Skills />
-          <Projects
-          title=""/>
+          <h1 className="projects-style">My projects</h1>
+          <div className="card-disposition">
+            {data.map(item => {
+              return(
+            <Projects
+            title={item.title}
+            image={item.imageUrl}
+            length={item.projectLength}
+            skills={item.skillsUsed}
+            description={item.projectDescription}
+            link={item.link}
+            />
+            )
+            })
+            }
+          </div>
           <Footpage />
       </div>
 
