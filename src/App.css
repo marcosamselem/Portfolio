@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+.spline-explore canvas{
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title-1 {
+  font-size: 75px;
+  color: #FFFFFF;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-2 {
+  font-size: 100px;
+  color: #255067;
+  margin-top: 20px;
+  margin-left: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.exploreButton {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 150px;
+  margin-left: 480px;
+}
+
+.flex-items {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.profile-pic {
+  width: 700px;
+  height: 500px;
+  margin-right: 100px;
+  border-radius: 15px;
+  margin-left: 100px;
+}
+
+.myself-info {
+  font-size: 25px;
+  color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+
+.about-title {
+  font-size: 75px;
+  color: #ffffff;
+  padding-top: 70px;
+  padding-left: 75px;
+  padding-bottom: 50px;
+}
+
+.frame-paragraph{
+  background-color: rgba(53, 16, 48, 0.1);
+  border-radius: 15px;
+  margin-left: 80px;
+}
+
+.flex-bar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 23px;
+  color: #ffffff;
+  background-color: #255067;
+}
+
+.link-to {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.skills-title {
+  font-size: 75px;
+  color: #ffffff;
+  margin-top: 170px;
+  margin-left: 75px;
+}
+
+.flex-d {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.front-end {
+  color: #255067;
+  font-size: 65px;
+}
+
+.back-end{
+  color: #255067;
+  font-size: 65px;
+}
+
+.front-list {
+  color: white;
+  font-size: 30px;
+  background-color: rgba(53, 16, 48, 0.1);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.back-list {
+  color: white;
+  font-size: 30px;
+  background-color: rgba(53, 16, 48, 0.1);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.flex-lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.padding-list {
+  padding: 15px;
+}
+
+.projects-style {
+  color: white;
+  margin-top: 150px;
+  font-size: 75px;
+  margin-left: 75px;
+}
+
+.docsight-card {
+  width: 475px;
+}
+
+.metacrew-card {
+  width: 475px;
+}
+
+.footpage {
+  background-color: #255067;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact {
+  color: white;
+  font-size: 20px;
 }
