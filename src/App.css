@@ -1,3 +1,5 @@
+
+
 .spline-explore canvas{
   width: 100vw !important;
   height: 100vh !important;
@@ -43,6 +45,7 @@
   padding-left: 30px;
   padding-right: 30px;
   font-family: 'Shippori Antique', sans-serif;
+  line-height: 2;
 }
 
 
@@ -137,13 +140,21 @@
 }
 
 .footpage {
-  background-color: #255067;
   color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  font-family: 'Shippori Antique', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
 }
 
 .contact {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .card-disposition {
@@ -176,11 +187,21 @@
 
 .place-in-center {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .margin-card {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.adjust-logo-text {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.linkedin:hover, .github:hover {
+  margin-bottom: 10px;
 }
