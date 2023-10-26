@@ -2,21 +2,34 @@ import React, { useState } from "react"
 
 const Skills = () => {
   const [hide, setHide] = useState(false);
+
   const handleToggleList = () => {
-    setHide(prevState => !prevState);
+    setHide(true);
   };
+  const handleToggleListErase = () => {
+    setHide(false);
+  };
+
 
   const [show, setShow] = useState(false);
   const handleBackendList = () => {
-    setShow(prevState => !prevState);
+    setShow(true);
   }
+
+  const handleBackendListErase = () => {
+      setShow(false);
+    }
 
   return(
     <main>
       <h1 className="skills-title">My Skills</h1>
       <div className="flex-d">
-        <p onClick={handleToggleList} className="front-end">Front-end</p>
-        <p onClick={handleBackendList} className="back-end">Back-end</p>
+        <p  onMouseEnter={handleToggleList}
+            onMouseLeave={handleToggleListErase}
+            className="front-end"> Front-end </p>
+        <p onMouseEnter={handleBackendList}
+        onMouseLeave={handleBackendListErase}
+        className="back-end">Back-end</p>
       </div>
       <div className="flex-lists">
             {hide && <ul className="front-list">
