@@ -10,7 +10,7 @@ const Home = () => {
     <div className="spline-explore">
       {/* <Spline scene="https://prod.spline.design/5qNBvrHiBNpIAGjn/scene.splinecode" /> */}
     </div>
-    <Link to="/about">
+    <Link to="/web">
     <img src={"/images/rectangle.png"} alt="" className='exploreButton' />
     </Link>
   </div>
