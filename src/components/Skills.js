@@ -21,7 +21,7 @@ const Skills = () => {
     }
 
   return(
-    <main>
+    <main id="skills">
       <h1 className="skills-title">My Skills</h1>
       <div className="flex-d">
         <p  onMouseEnter={handleToggleList}

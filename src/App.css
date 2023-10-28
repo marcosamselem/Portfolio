@@ -70,6 +70,8 @@
   color: #ffffff;
   background-color: #255067;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 .link-to {
@@ -205,4 +207,8 @@
 
 .linkedin:hover, .github:hover {
   margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
 }
