@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
+    console.log(sectionId)
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -28,11 +29,12 @@ const Navbar = () => {
   return (
     <nav className={hidden ? 'flex-bar hidden' : 'flex-bar'}>
         <Link style={{textDecoration: "none"}}to="/">
-        <p className="link-to">Home</p>
+        <p className="change-color link-to">Home</p>
         </Link>
-        <p onClick={() => scrollToSection('about')}>About</p>
-        <p onClick={() => scrollToSection('skills')}>Skills</p>
-        <p onClick={() => scrollToSection('projects')}>Projects</p>
+        <p className="change-color" onClick={() => scrollToSection('about')}>About</p>
+        <p className="change-color" onClick={() => scrollToSection('skills')}>Skills</p>
+        <p className="change-color" onClick={() => scrollToSection('projects')}>Projects</p>
+        <p className="change-color" onClick={() => scrollToSection('contact')}>Contact</p>
     </nav>
   )
 }

@@ -1,8 +1,11 @@
 import React from "react";
 import "../App.css";
+import { Link } from 'react-router-dom';
 
 const Projects = (props) => {
   return (
+      <main>
+      <Link style={{textDecoration: "none"}} to={props.link}>
       <div className="card">
         <div className="place-in-center">
           <h1><strong>{props.title}</strong></h1>
@@ -14,6 +17,8 @@ const Projects = (props) => {
         <h2 className="margin-card">Skills used: {props.skills}</h2>
         <h2 className="margin-card">Project description: {props.description}</h2>
       </div>
+      </Link>
+      </main>
   );
 };
 

@@ -21,8 +21,8 @@ const Skills = () => {
     }
 
   return(
-    <main id="skills">
-      <h1 className="skills-title">My Skills</h1>
+    <div id="skills">
+      <div className="skills-title">My Skills</div>
       <div className="flex-d">
         <p  onMouseEnter={handleToggleList}
             onMouseLeave={handleToggleListErase}
@@ -59,7 +59,7 @@ const Skills = () => {
             <li>Ajax</li>
           </ul>}
         </div>
-    </main>
+    </div>
   )
 }
 
