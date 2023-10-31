@@ -11,7 +11,9 @@ const Home = () => {
       {/* <Spline scene="https://prod.spline.design/5qNBvrHiBNpIAGjn/scene.splinecode" /> */}
     </div>
     <Link to="/web">
-    <img src={"/images/rectangle.png"} alt="" className='exploreButton' />
+      <div className="display-explore">
+        <img src={"/images/rectangle.png"} alt="" className='exploreButton' />
+      </div>
     </Link>
   </div>
   )

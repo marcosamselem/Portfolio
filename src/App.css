@@ -1,5 +1,3 @@
-
-
 .spline-explore canvas{
   width: 100vw !important;
   height: 100vh !important;
@@ -23,7 +21,11 @@
   position: fixed;
   bottom: 0;
   margin-bottom: 150px;
-  margin-left: 480px;
+}
+
+.display-explore {
+  display: flex;
+  justify-content: center;
 }
 
 .flex-items {
@@ -48,7 +50,6 @@
   line-height: 2;
 }
 
-
 .about-title {
   font-size: 75px;
   color: #ffffff;
@@ -72,6 +73,15 @@
   align-items: center;
   position: sticky;
   top: 0;
+}
+
+.change-color:hover {
+  background: linear-gradient(to right, #D3B031 0.1%, #9CD0ED);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  display: inline-block;
 }
 
 .link-to {
@@ -168,12 +178,10 @@
 }
 
 .card{
-  background-image: linear-gradient(0deg, #D3B031 0.1%, #9CD0ED);
   border-radius: 25px;
-  box-shadow: 0.5 0.5 ;
+  box-shadow: 0.5 0.5;
   font-family: 'Shippori Antique', sans-serif;
   font-size: 12.5px;
-  max-height: 1000px;
   margin-bottom: 50px;
   width: 520px;
   height: 700px;
@@ -182,7 +190,14 @@
   padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
+  background: linear-gradient(0deg, #D3B031 0.1%, #9CD0ED);
 }
+
+.card:hover {
+  background: linear-gradient(0deg, #eabf26 0.1%, #7abee2);
+  box-shadow: 0.3px 0.3px 5px #5A646E;
+}
+
 
 .img-size {
   width: 500px;
@@ -205,8 +220,19 @@
   column-gap: 15px;
 }
 
-.linkedin:hover, .github:hover {
+.fa-linkedin:hover, .fa-github:hover {
   margin-bottom: 10px;
+  color:#D3B031;
+  animation: rotate 0.2s linear 1;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg); /* Start the rotation from 0 degrees */
+  }
+  100% {
+      transform: rotate(360deg); /* Rotate the icon 360 degrees */
+  }
 }
 
 .hidden {
