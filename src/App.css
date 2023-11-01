@@ -120,6 +120,7 @@
   border-radius: 15px;
 }
 
+
 .back-list {
   color: white;
   font-size: 30px;
@@ -128,9 +129,14 @@
   border-radius: 15px;
 }
 
+.zoomed-list {
+  transform: scale(1.2); /* Initial scale */
+  transition: transform 0.3s ease; /* Add a transition effect for smooth scaling */
+}
+
 .flex-lists {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .padding-list {
