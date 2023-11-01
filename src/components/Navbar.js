@@ -11,9 +11,9 @@ const Navbar = () => {
       window.scrollTo({
         top: elementPosition,
         behavior: "smooth"
-      });
+      })
     }
-  };
+  }
 
     const [hidden, setHidden] = useState(false);
 
