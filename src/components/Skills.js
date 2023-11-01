@@ -4,45 +4,63 @@ const Skills = () => {
   const [hide, setHide] = useState(false);
   const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    const zoomTimer = setTimeout(() => {
+    const handleToggleList = (sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.offsetTop - offset;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: "smooth"
+        });
+      }
       setHide(true);
-      setShow(true);
-    }, 300);
-      return () => {
-        clearTimeout(zoomTimer);
-      };
-    }, []);
+    };
 
-  const handleToggleList = () => {
-    setHide(true);
-  };
-  const handleToggleListErase = () => {
+  const handleScrollHide = () => {
     setHide(false);
   };
 
-  const handleBackendList = () => {
+  const handleBackendList = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 10;
+      const elementPosition = element.offsetTop - offset;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      })
+    }
     setShow(true);
   }
 
-  const handleBackendListErase = () => {
-      setShow(false);
-    }
+  const handleScrollShow = () => {
+    setShow(false);
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScrollShow);
+    return () => {
+      window.removeEventListener('scroll', handleScrollShow); };
+    }, []);
+
+  useEffect(() => {
+      window.addEventListener('scroll', handleScrollHide);
+      return () => {
+        window.removeEventListener('scroll', handleScrollHide); };
+      }, []);
 
   return(
     <div id="skills">
       <div className="skills-title">My Skills</div>
       <div className="flex-d">
-        <p  onMouseEnter={handleToggleList}
-            onMouseLeave={handleToggleListErase}
+        <p  onClick={() => handleToggleList("front")}
             className="front-end"> Front-end </p>
-        <p onMouseEnter={handleBackendList}
-        onMouseLeave={handleBackendListErase}
+        <p onClick={() => handleBackendList("back")}
         className="back-end">Back-end</p>
       </div>
       <div className="flex-lists">
             {hide &&
-              <ul className={"front-list zoomed-list"}>
+              <ul id="front" className="front-list">
                 <li>css</li>
                 <li>javascript</li>
                 <li>react</li>
@@ -55,7 +73,7 @@ const Skills = () => {
                 <li>spline</li>
               </ul>}
           {show &&
-            <ul className={"back-list zoomed-list"}>
+            <ul id="back" className="back-list">
               <li>Typescript</li>
               <li>Node</li>
               <li>Ruby</li>
@@ -75,3 +93,7 @@ const Skills = () => {
 }
 
 export default Skills
+
+
+// set an id for each ul
+// set an onclick event that changes the value to true and zooms in to the div id

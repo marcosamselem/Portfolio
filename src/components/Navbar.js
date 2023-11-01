@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className={hidden ? 'flex-bar hidden' : 'flex-bar'}>
         <Link style={{textDecoration: "none"}}to="/">
-        <p className="change-color link-to">Home</p>
+          <p className="change-color link-to">Home</p>
         </Link>
         <p className="change-color" onClick={() => scrollToSection('about')}>About</p>
         <p className="change-color" onClick={() => scrollToSection('skills')}>Skills</p>
