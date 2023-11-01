@@ -4,16 +4,21 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
-    console.log(sectionId)
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      const offset = 80;
+      const elementPosition = element.offsetTop - offset;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
     }
   };
+
     const [hidden, setHidden] = useState(false);
 
     const handleScroll = () => {
-      setHidden(window.scrollY > 50);
+      setHidden(window.scrollY > 20);
     };
 
     useEffect(() => {
@@ -23,8 +28,6 @@ const Navbar = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
-
-
 
   return (
     <nav className={hidden ? 'flex-bar hidden' : 'flex-bar'}>
