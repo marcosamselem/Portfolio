@@ -106,39 +106,21 @@
 .flex-d {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
-.front-end {
+.extended-list {
   color: #255067;
-  font-size: 65px;
+  font-size: 55px;
+  margin-top: 20vh;
 }
 
-.back-end{
-  color: #255067;
-  font-size: 65px;
-}
-
-.front-list {
+.lists-style {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   background-color: rgba(53, 16, 48, 0.1);
-  padding: 50px;
+  padding: 20px;
   border-radius: 15px;
-}
-
-
-.back-list {
-  color: white;
-  font-size: 30px;
-  background-color: rgba(53, 16, 48, 0.1);
-  padding: 50px;
-  border-radius: 15px;
-}
-
-.zoomed-list {
-  transform: scale(1.2); /* Initial scale */
-  transition: transform 0.3s ease; /* Add a transition effect for smooth scaling */
 }
 
 .flex-lists {
@@ -152,7 +134,7 @@
 
 .projects-style {
   color: white;
-  margin-top: 150px;
+  margin-top: 65px;
   font-size: 75px;
   margin-left: 75px;
 }
