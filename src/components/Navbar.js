@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
+  const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80;
       const elementPosition = element.offsetTop - offset;
@@ -14,24 +14,39 @@ const Navbar = () => {
       })
     }
   }
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-    const [hidden, setHidden] = useState(false);
+  const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+          // Scrolling down
+          setIsVisible(false);
+      } else {
+        setIsVisible(true)
+      }
+      setLastScrollY(currentScrollY);
+  };
 
-    const handleScroll = () => {
-      setHidden(window.scrollY > 20);
-    };
-
-    useEffect(() => {
+  useEffect(() => {
       window.addEventListener('scroll', handleScroll);
 
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('scroll', handleScroll);
       };
-    }, []);
+  }, [lastScrollY]);
+
+  const navbarStyle = {
+      transition: 'top 0.3s',
+      top: isVisible ? '0' : '-100px', // Adjust this based on the height of your navbar
+      position: 'fixed',
+      width: '100%',
+      // Add other styles as needed
+  };
 
   return (
-    <nav className={hidden ? 'flex-bar hidden' : 'flex-bar'}>
-        <Link style={{textDecoration: "none"}}to="/">
+    <nav style={navbarStyle} className='flex-bar'>
+        <Link style={{textDecoration: "none"}} to="/">
           <p className="change-color link-to">Home</p>
         </Link>
         <p className="change-color" onClick={() => scrollToSection('about')}>About</p>
