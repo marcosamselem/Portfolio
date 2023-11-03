@@ -27,10 +27,10 @@ const Skills = () => {
       <div className="skills-title">My Skills</div>
       <div>
         <div className="flex-d">
-          <div style={{padding: "0", height: "40vh", width: "28vw"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div style={{padding: "0", height: "40vh", width: "28vw", cursor: "pointer"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {showFrontSkills ? <SkillDisplayer languages={frontEnd} /> : <p className="extended-list">Front-end</p>}
           </div>
-          <div style={{padding: "0", height: "40vh", width: "28vw"}} onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
+          <div style={{padding: "0", height: "40vh", width: "28vw", cursor: "pointer"}} onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
             {showBackSkills ? <SkillDisplayer languages={backEnd} /> : <p className="extended-list">Back-end</p>}
           </div>
         </div>

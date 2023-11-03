@@ -57,7 +57,7 @@
 .about-title {
   font-size: 75px;
   color: #ffffff;
-  padding-top: 70px;
+  padding-top: 130px;
   padding-left: 75px;
   padding-bottom: 50px;
 }
@@ -78,8 +78,6 @@
   position: sticky;
   top: 0;
 }
-
-
 
 .change-color:hover {
   background: linear-gradient(to right, #D3B031 0.1%, #9CD0ED);
@@ -121,6 +119,7 @@
   background-color: rgba(53, 16, 48, 0.1);
   padding: 20px;
   border-radius: 15px;
+  cursor: pointer; /* Initial height, starts from the middle */
 }
 
 .flex-lists {
@@ -134,7 +133,7 @@
 
 .projects-style {
   color: white;
-  margin-top: 65px;
+  margin-top: 90px;
   font-size: 75px;
   margin-left: 75px;
 }
