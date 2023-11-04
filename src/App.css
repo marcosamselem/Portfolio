@@ -24,7 +24,17 @@
 }
 
 .exploreButton:hover {
-  box-shadow: 0px 0px 10px 5px #D3B031;
+  box-shadow: 0px 10px 10px 5px #D3B031;
+  animation: pulse 0.5s ease forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 .display-explore {
@@ -119,7 +129,17 @@
   background-color: rgba(53, 16, 48, 0.1);
   padding: 20px;
   border-radius: 15px;
-  cursor: pointer; /* Initial height, starts from the middle */
+  cursor: pointer;
+  animation: zoomOut 0.5s ease;
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .flex-lists {
@@ -184,7 +204,7 @@
   padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
-  background: linear-gradient(0deg, #D3B031 0.1%, #9CD0ED);
+  background: linear-gradient(0deg, #D3B031 0.1%, #9cd0ed);
 }
 
 .card:hover {
