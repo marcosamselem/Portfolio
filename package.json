@@ -1,15 +1,6 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      "@babel/plugin-proposal-private-property-in-object"
-    ]
-  },
   "private": true,
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
@@ -47,9 +38,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/preset-env": "^7.23.2",
-    "@babel/preset-react": "^7.22.15",
     "react-router-dom": "6.17.0"
   }
 }
