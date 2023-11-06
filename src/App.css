@@ -1,6 +1,91 @@
-.spline-explore canvas{
-  width: 100vw !important;
-  height: 100vh !important;
+@media screen and (max-width: 768px) {
+  .myself-info {
+    font-size: 15px !important;
+    color: #ffffff;
+    padding: 15px !important;
+    display: flex;
+    margin: 15px !important;
+    font-family: 'Shippori Antique', sans-serif;
+    line-height: 2;
+  }
+
+  .profile-pic {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 50px !important;
+    color: #ffffff;
+    padding-left: 20px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .flex-items {
+    display: block;
+    margin: 20px !important;
+    margin-left: 20px !important;
+    justify-content: center !important;
+    margin-left: 0px !important;
+  }
+
+  .frame-paragraph{
+    background-color: rgba(53, 16, 48, 0.1);
+    border-radius: 15px;
+    margin-left: 20px !important;
+
+}
+
+.skills-title {
+  font-size: 50px !important;
+  color: #ffffff;
+  margin-top: 50px !important;
+  margin-left: 20px !important;
+  }
+
+  .flex-d {
+    display: block !important;
+    justify-content: center !important;
+    margin-top: 0px !important;
+    padding: 20px !important;
+
+  }
+
+  .extended-list {
+    color: #255067;
+    font-size: 30px !important;
+    margin-top: 20px !important;
+  }
+
+  .displayment-list {
+    height: 0px;
+  }
+
+  .skills-list-style {
+  padding: "0";
+  height: "0vh";
+  width: "28vw";
+  cursor: "pointer";
+  }
+
+  .lists-style {
+    color: white;
+    font-size: 25px;
+    background-color: rgba(53, 16, 48, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    animation: zoomOut 0.5s ease;
+    margin-top: 20px;
+  }
+}
+
+
+.flex-items {
+  display: flex;
+  margin: 20px;
+  margin-left: 20px;
+  justify-content: space-between;
+  margin-left: 0px;
 }
 
 .title-1 {
@@ -42,11 +127,6 @@
   justify-content: center;
 }
 
-.flex-items {
-  display: flex;
-  justify-content: space-between;
-}
-
 .profile-pic {
   width: 700px;
   height: 500px;
@@ -67,7 +147,6 @@
 .about-title {
   font-size: 75px;
   color: #ffffff;
-  padding-top: 130px;
   padding-left: 75px;
   padding-bottom: 50px;
 }
@@ -248,3 +327,14 @@
       transform: rotate(360deg); /* Rotate the icon 360 degrees */
   }
 }
+
+.displayment-list {
+  height: 60vh;
+}
+
+.skills-list-style {
+  padding: "0";
+  height: "40vh";
+  width: "28vw";
+  cursor: "pointer";
+  }
