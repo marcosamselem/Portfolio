@@ -3,7 +3,7 @@ import "../App.css";
 
 const SkillDisplayer = ({languages}) => {
   return (
-    <div className={'lists-style'}>
+    <div className={'lists-style'} key="id">
       <ul >
         {languages.map((language)=>{
           return(

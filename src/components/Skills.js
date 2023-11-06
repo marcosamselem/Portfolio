@@ -23,14 +23,14 @@ const Skills = () => {
   };
 
   return (
-    <div style={{height: "60vh"}}id="skills">
+    <div className="displayment-list" id="skills">
       <div className="skills-title">My Skills</div>
       <div>
         <div className="flex-d">
-          <div style={{padding: "0", height: "40vh", width: "28vw", cursor: "pointer"}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div className="skills-list-style" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {showFrontSkills ? <SkillDisplayer languages={frontEnd} /> : <p className="extended-list">Front-end</p>}
           </div>
-          <div style={{padding: "0", height: "40vh", width: "28vw", cursor: "pointer"}} onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
+          <div className="skills-list-style" onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
             {showBackSkills ? <SkillDisplayer languages={backEnd} /> : <p className="extended-list">Back-end</p>}
           </div>
         </div>
