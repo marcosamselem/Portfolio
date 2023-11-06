@@ -1,6 +1,6 @@
 import React from 'react';
 import "../App.css"
-
+import ProfilePic from "../images/picture.png"
 const About = () => {
   return (
     <div id="about">
@@ -16,7 +16,7 @@ const About = () => {
             languages.
           </p>
         </div>
-        <img className="profile-pic" src={"/images/picture.png"} alt="" />
+        <img className="profile-pic" src={ProfilePic} alt="" />
       </div>
     </div>
 
