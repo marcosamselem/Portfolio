@@ -1,6 +1,8 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from 'react-router-dom';
+import Rectangle from "../images/Rectangle.png";
 import '../App.css';
+
 const Home = () => {
   return (
     <div>
@@ -11,7 +13,7 @@ const Home = () => {
     </div>
     <Link to="/web">
       <div className="display-explore">
-        <img src={"/images/rectangle.png"} alt="" className='exploreButton' />
+        <img src={Rectangle} alt="" className='exploreButton' />
       </div>
     </Link>
   </div>
