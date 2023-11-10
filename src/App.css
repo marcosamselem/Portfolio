@@ -42,6 +42,40 @@
   margin-left: 20px !important;
   }
 
+
+  .projects-style {
+    color: white;
+    margin-top: 90px;
+    font-size: 50px !important;
+    margin-left: 20px !important;
+  }
+
+  .card-disposition {
+    display: block !important;
+    justify-content: center !important;
+  }
+
+  .card{
+    border-radius: 25px;
+    box-shadow: 0.5 0.5;
+    font-family: 'Shippori Antique', sans-serif;
+    font-size: 10px;
+    margin-bottom: 50px;
+    width: 350px !important;
+    height: 624px !important;
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    background: linear-gradient(0deg, #D3B031 0.1%, #9cd0ed);
+  }
+
+  .img-size {
+    width: 300px !important;
+  }
+
   .flex-d {
     display: block !important;
     justify-content: center !important;
@@ -77,6 +111,37 @@
     animation: zoomOut 0.5s ease;
     margin-top: 20px;
   }
+
+
+.footpage {
+  color: white;
+  padding-top: 15px !important;
+  padding-bottom: 10px !important;
+  padding-right: 60px;
+  font-size: 20px;
+  font-family: 'Shippori Antique', sans-serif;
+  display: block !important;
+  justify-content: left;
+  padding-left: 5px !important;
+}
+
+.adjust-logo-text {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.align-phone-logo {
+  margin-left: none;
+}
+
+.mobile-logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 103px;
+  margin-top: 15px;
+}
+
 }
 
 
@@ -256,6 +321,10 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 40px;
+}
+
+.align-phone-logo {
+  margin-left: 80px;
 }
 
 .contact {
