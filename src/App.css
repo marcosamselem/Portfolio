@@ -64,7 +64,7 @@
     width: 350px !important;
     height: 624px !important;
     display: flex;
-    margin-left: 15px;
+    justify-content: center;
     flex-direction: column;
     padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
