@@ -16,6 +16,7 @@ const Web= () => {
         <Skills />
      <div id="projects">
      <h1 className='projects-style'>My Projects</h1>
+     <div className="cards-mobile">
      <div className="card-disposition">
      {data.map(item => {
         return(
@@ -32,6 +33,7 @@ const Web= () => {
       })
     }
     </div>
+   </div>
     </div>
       <Footpage />
     </div>

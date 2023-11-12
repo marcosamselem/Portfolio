@@ -3,7 +3,7 @@ import React from "react"
 const Footpage = () => {
   return(
   <main id="contact" style={{backgroundColor: "#255067", padding: "30px"}}>
-      <h1 className="contact">Contact:</h1>
+      <span className="contact">Contact:</span>
       <div className="footpage">
         <div className="adjust-logo-text">
           <i className="align-phone-logo" class="fa-solid fa-phone fa-xl"></i>

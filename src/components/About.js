@@ -3,7 +3,7 @@ import "../App.css"
 import ProfilePic from "../images/picture.png"
 const About = () => {
   return (
-    <div id="about" style={{marginTop: "130px"}}>
+    <div id="about" className="about-space">
       <div className="about-title">About me</div>
       <div className="flex-items">
         <div className="frame-paragraph">
