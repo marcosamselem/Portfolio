@@ -50,9 +50,14 @@
     margin-left: 20px !important;
   }
 
+  .cards-mobile {
+    display: flex;
+    justify-content: center;
+  }
+
   .card-disposition {
     display: block !important;
-    justify-content: center !important;
+    flex-direction: column !important;
   }
 
   .card{
@@ -64,7 +69,6 @@
     width: 350px !important;
     height: 624px !important;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -125,22 +129,27 @@
   padding-left: 5px !important;
 }
 
+.align-phone-logo {
+  margin-left: 0px !important;
+}
 .adjust-logo-text {
   display: flex;
   align-items: center;
   column-gap: 15px;
 }
 
-.align-phone-logo {
-  margin-left: none;
+.mobile-logo {
+  display: flex !important;
+  justify-content: space-evenly !important;
+  margin-left: 0px !important;
+  width: 396px !important;
+  margin-top: 15px !important;
 }
 
-.mobile-logo {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 103px;
-  margin-top: 15px;
-}
+
+.about-space {
+  margin-top: 40px !important;
+ }
 
 }
 
@@ -407,3 +416,25 @@
   width: "10vw";
   cursor: "pointer";
   }
+
+.mobile-logo {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #255067;
+  max-width: 185px;
+  border-radius: 10px;
+  margin-left: 48px;
+  margin-top: 16px;
+  padding: 15px;
+  opacity: 0.9;
+}
+
+.about-space {
+  margin-top: 130px;
+}
