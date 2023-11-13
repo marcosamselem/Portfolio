@@ -1,4 +1,18 @@
 @media screen and (max-width: 768px) {
+  .title-1 {
+    font-size: 30px !important;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-left: 50px !important;
+  }
+
+  .title-2 {
+    font-size: 35px !important;
+    color: #255067;
+    margin-top: 20px;
+    margin-left: 50px !important;
+  }
+
   .myself-info {
     font-size: 15px !important;
     color: #ffffff;
@@ -7,6 +21,12 @@
     margin: 15px !important;
     font-family: 'Shippori Antique', sans-serif;
     line-height: 2;
+  }
+
+  .exploreButton {
+    position: absolute !important;
+    bottom: 30% !important;
+    width: 269px !important;
   }
 
   .profile-pic {
