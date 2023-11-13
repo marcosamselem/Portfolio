@@ -57,16 +57,34 @@ const Navbar = () => {
     </nav>
     )
 
+    const [isSticky, setIsSticky] = useState(false)
     const [mobileNavbar, setMobileNavbar] = useState(false);
 
     const toggleMobileNavbar = () => {
         setMobileNavbar(!mobileNavbar)
     }
 
+    useEffect(() => {
+      const handleScroll = () => {
+        const offset = window.scrollY;
+
+        // Adjust the offset value as needed
+        if (offset > 100) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
     const navbarOpened = (
-    <div onClick={toggleMobileNavbar}>
-      <i class="fa-solid fa-2xl fa-bars" style={{color: "#255067", navbarStyle, marginTop: "30px", marginLeft: "10px"}}></i>
-      <nav style={navbarStyle} className='mobile-navbar'>
+    <div className={`navbar ${isSticky ? 'sticky' : ''}`} onClick={toggleMobileNavbar}>
+      <i class="fa-solid fa-2xl fa-bars fa-rotate-90" style={{color: "#255067", marginTop: "30px", marginLeft: "10px"}}></i>
+      <nav className='mobile-navbar'>
         <Link style={{textDecoration: "none"}} to="/">
           <p style={{color: "white", width: "65px"}} className="change-color link-to">Home</p>
         </Link>
@@ -79,7 +97,7 @@ const Navbar = () => {
 )
 
     const navbarClosed = (
-      <div>
+      <div className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <i onClick={toggleMobileNavbar} class="fa-solid fa-2xl fa-bars" style={{color: "#255067", marginTop: "30px", marginLeft: "10px"}}></i>
       </div>
     )
