@@ -80,7 +80,7 @@
     flex-direction: column !important;
   }
 
-  .card{
+  .card {
     border-radius: 25px;
     box-shadow: 0.5 0.5;
     font-family: 'Shippori Antique', sans-serif;
@@ -115,9 +115,9 @@
     margin-top: 20px !important;
   }
 
-  .displayment-list {
+.displayment-list {
     height: 0px;
-  }
+ }
 
 .footpage {
   color: white;
@@ -147,7 +147,6 @@
   width: 396px !important;
   margin-top: 15px !important;
 }
-
 
 .about-space {
   margin-top: 40px !important;
@@ -437,7 +436,7 @@
   }
 
 .mobile-logo {
-  width: 500px;
+  width: 480px;
   display: flex;
   justify-content: space-between;
 }
