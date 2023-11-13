@@ -67,7 +67,8 @@
     font-size: 10px;
     margin-bottom: 50px;
     width: 350px !important;
-    height: 624px !important;
+    min-height: 624px !important;
+    max-height: 750px !important;
     display: flex;
     flex-direction: column;
     padding: 5px;
