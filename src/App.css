@@ -429,12 +429,41 @@
   background-color: #255067;
   max-width: 185px;
   border-radius: 10px;
-  margin-left: 48px;
-  margin-top: 16px;
   padding: 15px;
   opacity: 0.9;
+  animation: slideIn 0.3s ease;
+  margin-top: 16px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .about-space {
   margin-top: 130px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.sticky-disappear {
+  display: none;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg); /* Start the rotation from 0 degrees */
+  }
+  100% {
+      transform: rotate(180deg); /* Rotate the icon 360 degrees */
+  }
 }
