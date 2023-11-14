@@ -2,6 +2,7 @@ import React, { useState, useEffect }from "react";
 import '../App.css'
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import pdfFile from '../files/Cvfile.pdf';
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -45,8 +46,14 @@ const Navbar = () => {
       // Add other styles as needed
   };
 
+
+    const downloadCv = () => {
+      window.open(pdfFile);
+    }
+
     const largeScreenComponent = (
     <nav style={navbarStyle} className='flex-bar'>
+        <div className="change-color" onClick={downloadCv}>Cv</div>
         <Link style={{textDecoration: "none"}} to="/">
           <p className="change-color link-to">Home</p>
         </Link>
@@ -92,6 +99,7 @@ const Navbar = () => {
         <p style={{color: "white", width: "90px"}} className="change-color" onClick={() => scrollToSection('skills')}>Skills</p>
         <p style={{color: "white", width: "120px"}} className="change-color" onClick={() => scrollToSection('projects')}>Projects</p>
         <p style={{color: "white", contact: "90px"}} className="change-color" onClick={() => scrollToSection('contact')}>Contact</p>
+        <p style={{color: "white", width: "65px"}} className="change-color" onClick={downloadCv}>Cv</p>
     </nav>
     </div>
 )
