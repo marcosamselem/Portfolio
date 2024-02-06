@@ -71,8 +71,9 @@
   }
 
   .cards-mobile {
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 
   .card-disposition {
@@ -238,26 +239,34 @@
   cursor: "pointer";
   }
 
-  .lists-style {
-    color: white;
-    font-size: 25px;
-    background-color: rgba(53, 16, 48, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    animation: zoomOut 0.5s ease;
-    margin-top: 20px;
-  }
-  .back-list-style {
-    color: white;
-    font-size: 25px;
-    background-color: rgba(53, 16, 48, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    animation: zoomOut 0.5s ease;
-    margin-top: 20px;
-  }
+.lists-style {
+  color: white;
+  font-size: 25px;
+  background-color: rgba(53, 16, 48, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  animation: zoomOut 0.5s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.back-list-style {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  color: white;
+  font-size: 25px;
+  background-color: rgba(53, 16, 48, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  animation: zoomOut 0.5s ease;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 10;
+}
 
 .flex-bar {
   display: flex;

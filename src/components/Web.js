@@ -16,18 +16,8 @@ const Web= () => {
       <Navbar />
       <About />
       <Skills />
-      {programmingLanguages.map(item => {
-        return(
-            <SkillDisplayer
-              key={item.id}
-              skills={item.skills}
-              style={item.styleClass}
-            />
-          )
-        })
-      }
       <div id="projects">
-      <h1 className='projects-style'>My Projects</h1>
+      <h1 style={{marginTop:"100px"}} className='projects-style'>My Projects</h1>
       <div className="cards-mobile">
         <div className="card-disposition">
           {data.map(item => {

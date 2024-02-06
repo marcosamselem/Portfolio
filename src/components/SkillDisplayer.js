@@ -6,7 +6,7 @@ const SkillDisplayer = ({style, skills}) => {
   return (
     <div className={style}>
       <ul >
-        {skills.map((skill)=>{
+        {skills.map((skill) => {
           return(
             <li>{skill}</li>
           )
