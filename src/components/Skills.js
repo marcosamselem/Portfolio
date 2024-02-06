@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SkillDisplayer from "./SkillDisplayer";
-import { frontEnd, backEnd } from "../data/programmingLanguages";
+import lists from "../data/programmingLanguages";
 import { useMediaQuery } from 'react-responsive';
 
 const Skills = () => {
@@ -29,10 +29,10 @@ const Skills = () => {
     <div>
       <div className="flex-d">
         <div className="skills-list-style" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          {showFrontSkills ? <SkillDisplayer languages={frontEnd} /> : <p className="extended-list">Front-end</p>}
+          {showFrontSkills ? <SkillDisplayer skills={lists[0].skills} style={lists[0].styleClass} key={lists[0].id} /> : <p className="extended-list">Front-end</p>}
         </div>
         <div className="skills-list-style" onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
-          {showBackSkills ? <SkillDisplayer languages={backEnd} /> : <p className="extended-list">Back-end</p>}
+          {showBackSkills ? <SkillDisplayer skills={lists[1].skills} style={lists[1].styleClass} key={lists[1].id}/> : <p className="extended-list">Back-end</p>}
         </div>
       </div>
     </div>
@@ -45,10 +45,10 @@ const Skills = () => {
     <div>
       <div className="flex-d">
         <div className="skills-list-style" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-          {showFrontSkills ? <SkillDisplayer languages={frontEnd} /> : <p className="extended-list">Front-end</p>}
+          {showFrontSkills ? <SkillDisplayer skills={lists[0].skills} style={lists[0].styleClass} /> : <p className="extended-list">Front-end</p>}
         </div>
         <div className="skills-list-style" onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
-          {showBackSkills ? <SkillDisplayer languages={backEnd} /> : <p className="extended-list">Back-end</p>}
+          {showBackSkills ? <SkillDisplayer skills={lists[0].skills} style={lists[0].styleClass} /> : <p className="extended-list">Back-end</p>}
         </div>
       </div>
     </div>

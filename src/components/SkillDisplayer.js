@@ -1,16 +1,16 @@
 import React from "react";
 import "../App.css";
 
-const SkillDisplayer = ({languages}) => {
+
+const SkillDisplayer = ({style, skills}) => {
   return (
-    <div className={'lists-style'} key="id">
+    <div className={style}>
       <ul >
-        {languages.map((language)=>{
+        {skills.map((skill)=>{
           return(
-            <li>{language}</li>
+            <li>{skill}</li>
           )
         })}
-
       </ul>
     </div>
   )
