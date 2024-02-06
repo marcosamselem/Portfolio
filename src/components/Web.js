@@ -6,8 +6,6 @@ import Skills from './Skills'
 import data from '../data/projectData'
 import Footpage from './Footpage'
 import Navbar from "./Navbar"
-import SkillDisplayer from "./SkillDisplayer"
-import programmingLanguages from "../data/programmingLanguages"
 
 const Web= () => {
   return(
@@ -19,7 +17,6 @@ const Web= () => {
       <div id="projects">
       <h1 style={{marginTop:"100px"}} className='projects-style'>My Projects</h1>
       <div className="cards-mobile">
-        <div className="card-disposition">
           {data.map(item => {
               return(
                 <Projects
@@ -34,7 +31,6 @@ const Web= () => {
               )
             })
           }
-        </div>
       </div>
     </div>
     <Footpage />
