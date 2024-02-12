@@ -48,7 +48,7 @@ const Skills = () => {
           {showFrontSkills ? <SkillDisplayer skills={lists[0].skills} style={lists[0].styleClass} /> : <p className="extended-list">Front-end</p>}
         </div>
         <div className="skills-list-style" onMouseEnter={handleMouseEnterBack} onMouseLeave={handleMouseLeaveBack}>
-          {showBackSkills ? <SkillDisplayer skills={lists[0].skills} style={lists[0].styleClass} /> : <p className="extended-list">Back-end</p>}
+          {showBackSkills ? <SkillDisplayer skills={lists[1].skills} style={lists[1].styleClass} /> : <p className="extended-list">Back-end</p>}
         </div>
       </div>
     </div>

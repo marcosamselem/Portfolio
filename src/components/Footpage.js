@@ -2,7 +2,7 @@ import React from "react"
 
 const Footpage = () => {
   return(
-  <main id="contact" style={{backgroundColor: "#255067", padding: "30px"}}>
+  <main id="contact" style={{backgroundColor: "#255067", padding: "30px", marginTop: "50px"}}>
       <span className="contact">Contact:</span>
       <div className="footpage">
         <div className="adjust-logo-text">

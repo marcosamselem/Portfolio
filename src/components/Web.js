@@ -15,7 +15,7 @@ const Web= () => {
       <About />
       <Skills />
       <div id="projects">
-      <h1 style={{marginTop:"100px"}} className='projects-style'>My Projects</h1>
+      <h1 className='projects-style'>My Projects</h1>
       <div className="cards-mobile">
           {data.map(item => {
               return(

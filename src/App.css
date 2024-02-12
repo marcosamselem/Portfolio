@@ -134,27 +134,42 @@
   padding-left: 5px !important;
 }
 
-.align-phone-logo {
-  margin-left: 0px !important;
-}
-.adjust-logo-text {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-}
+  .align-phone-logo {
+    margin-left: 0px !important;
+  }
+  .adjust-logo-text {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
 
-.mobile-logo {
-  display: flex !important;
-  justify-content: space-evenly !important;
-  margin-left: 0px !important;
-  width: 396px !important;
-  margin-top: 15px !important;
-}
+  .mobile-logo {
+    display: flex !important;
+    justify-content: space-evenly !important;
+    margin-left: 0px !important;
+    width: 396px !important;
+    margin-top: 15px !important;
+  }
 
-.about-space {
-  margin-top: 40px !important;
- }
+  .about-space {
+    margin-top: 40px !important;
+  }
 
+  .back-list-style {
+    columns: 1 !important;
+    -webkit-columns: 1 !important;
+    -moz-columns: 1 !important;
+    color: white;
+    font-size: 25px;
+    background-color: rgba(53, 16, 48, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    animation: zoomOut 0.5s ease;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    position: relative;
+  }
 }
 
 .flex-items {
@@ -249,6 +264,8 @@
   border-radius: 15px;
   cursor: pointer;
   animation: zoomOut 0.5s ease;
+  height: 530px;
+  width: 555px;
   position: relative;
   z-index: 10;
 }
@@ -262,6 +279,7 @@
   background-color: rgba(53, 16, 48, 0.1);
   padding: 20px;
   border-radius: 15px;
+  height: 530px;
   cursor: pointer;
   animation: zoomOut 0.5s ease;
   margin-top: 20px;
@@ -315,16 +333,6 @@
   margin-top: 20vh;
 }
 
-.lists-style {
-  color: white;
-  font-size: 25px;
-  background-color: rgba(53, 16, 48, 0.1);
-  padding: 20px;
-  border-radius: 15px;
-  cursor: pointer;
-  animation: zoomOut 0.5s ease;
-}
-
 @keyframes zoomOut {
   from {
     transform: scale(0);
@@ -345,7 +353,7 @@
 
 .projects-style {
   color: white;
-  margin-top: 90px;
+  margin-top: 250px !important;
   font-size: 75px;
   margin-left: 75px;
 }
@@ -357,6 +365,14 @@
 .metacrew-card {
   width: 475px;
 }
+
+/* .footpage {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+
+} */
 
 .footpage {
   color: white;
@@ -380,10 +396,11 @@
   font-size: 30px;
 }
 
-.card-disposition {
+.cards-mobile {
   margin-left: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 20px;
 }
@@ -402,6 +419,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
   background: linear-gradient(0deg, #D3B031 0.1%, #9cd0ed);
+  margin: 0 auto;
 }
 
 .card:hover {
